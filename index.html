@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tesr - Professional website">
+    <meta name="generator" content="Website Generator">
+    <meta name="theme-color" content="hsl(126, 74%, 40%)">
+    <title>tesr</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body{font-family:'Inter', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'Inter', sans-serif}
+        section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
+        header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
+        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}
+        .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
+        ::-webkit-scrollbar{width:8px;height:8px}
+        ::-webkit-scrollbar-track{background:#f1f1f1}
+        ::-webkit-scrollbar-thumb{background:hsl(126, 74%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(126, 74%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(126, 74%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        @media print{[data-animate]{opacity:1;transform:none}}
+    </style>
+    
+    <script>
+        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(126, 74%, 95%)","100":"hsl(126, 74%, 90%)","200":"hsl(126, 74%, 80%)","300":"hsl(126, 74%, 70%)","400":"hsl(126, 74%, 60%)","500":"hsl(126, 74%, 50%)","600":"hsl(126, 74%, 40%)","700":"hsl(126, 74%, 30%)","800":"hsl(126, 74%, 20%)","900":"hsl(126, 74%, 10%)"}},fontFamily:{sans:[''Inter'','system-ui','sans-serif'],heading:[''Inter'','sans-serif']}}}}
+    </script>
+</head>
+<body class="antialiased text-gray-800">
+    <main>
+        
+<!-- NAV SECTION -->
+
+
+<!-- HEADER SECTION -->
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESR - Administrative Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        /* Add custom styles here if needed */
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
+    <header class="relative bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url(/images/g6b26b8a920c13a2bd8687ff3965be073f251d662b01b201287757307cec41d314a474428ff71c3ed090a20f17ded221aa0f15e40d4acf30547cf6aa6931091d0_640.jpg);">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-700 opacity-70"></div>
+        <nav class="absolute top-0 left-0 w-full py-6 px-4 sm:px-6 lg:px-8 z-20" data-animate="fade-down">
+            <div class="container mx-auto flex items-center justify-between">
+                <a href="#" class="text-white text-2xl font-bold">TESR</a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#" class="text-gray-200 hover:text-white transition duration-300">Services</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition duration-300">About Us</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition duration-300">Testimonials</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition duration-300">Contact</a>
+                    <a href="#" class="bg-yellow-500 text-blue-900 py-2 px-4 rounded-lg hover:bg-yellow-600 transition duration-300">Get a Quote</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden bg-blue-900 bg-opacity-90 absolute top-full left-0 w-full py-4 px-6 z-10">
+                <a href="#" class="block py-2 text-gray-200 hover:text-white transition duration-300">Services</a>
+                <a href="#" class="block py-2 text-gray-200 hover:text-white transition duration-300">About Us</a>
+                <a href="#" class="block py-2 text-gray-200 hover:text-white transition duration-300">Testimonials</a>
+                <a href="#" class="block py-2 text-gray-200 hover:text-white transition duration-300">Contact</a>
+                <a href="#" class="block py-2 bg-yellow-500 text-blue-900 rounded-lg text-center hover:bg-yellow-600 transition duration-300">Get a Quote</a>
+            </div>
+        </nav>
+
+        <div class="container mx-auto text-center z-10 text-white" data-animate="fade-up">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">Streamline Your Business with TESR</h1>
+            <p class="text-lg sm:text-xl mb-8">Expert Administrative Solutions Tailored to Your Needs.</p>
+            <a href="#" class="bg-yellow-500 text-blue-900 py-3 px-6 rounded-lg text-lg hover:bg-yellow-600 transition duration-300">Learn More</a>
+        </div>
+    </header>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-8" data-animate="fade-in">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300" data-animate="slide-up">
+                    <img src="/images/ge729e866abc26e2dcba4307de46b2af65d472422fccb8dd62e4cc8827499c7fbd54c66e7cc4de78c87335e4576e519612d6c6bd8a1db5a76a8cf031b60b7c80c_640.jpg" alt="Virtual Assistant" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Virtual Assistant Services</h3>
+                    <p class="text-gray-700">Delegate tasks like scheduling, email management, and data entry to our skilled virtual assistants.</p>
+                    <a href="#" class="inline-block mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Learn More</a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300" data-animate="slide-up">
+                    <img src="/images/gf9ae895c45bbb0b6b94bdd65038df5beec4225917ff6a41f8646316a5d9251f4d4680e02dea2857e189c6b420a73585d30a71e7280b0eedca46af9c940fe52c0_640.jpg" alt="Bookkeeping Services" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Bookkeeping & Accounting</h3>
+                    <p class="text-gray-700">Keep your finances organized with our comprehensive bookkeeping and accounting solutions.</p>
+                    <a href="#" class="inline-block mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Learn More</a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300" data-animate="slide-up">
+                    <img src="/images/g09a9202a923f2241dee1b581b810c92531bcf73b992d930ce28b89992307d4ba449134ade1aed49557e6abd36097eef8dca268c4a90c72d22e51979970cd7621_640.jpg" alt="HR Consulting" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Human Resources Consulting</h3>
+                    <p class="text-gray-700">Navigate complex HR challenges with our expert consulting services, from compliance to employee relations.</p>
+                    <a href="#" class="inline-block mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-blue-50">
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div data-animate="fade-right">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">About TESR</h2>
+                <p class="text-gray-700 mb-4">TESR is dedicated to providing comprehensive administrative services that empower businesses to thrive. We understand the challenges of managing day-to-day operations, and we're here to help you streamline your processes, reduce costs, and focus on what matters most: growing your business.</p>
+                <p class="text-gray-700 mb-4">Our team of experienced professionals is committed to delivering exceptional service and customized solutions tailored to your specific needs. Whether you're a small startup or a large corporation, we have the expertise and resources to support your administrative requirements.</p>
+                <a href="#" class="inline-block bg-yellow-500 text-blue-900 py-2 px-4 rounded-lg hover:bg-yellow-600 transition duration-300">Read More</a>
+            </div>
+            <div data-animate="fade-left">
+                <img src="/images/g6b26b8a920c13a2bd8687ff3965be073f251d662b01b201287757307cec41d314a474428ff71c3ed090a20f17ded221aa0f15e40d4acf30547cf6aa6931091d0_640.jpg" alt="About Us" class="w-full rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-8" data-animate="fade-in">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-right">
+                    <p class="text-gray-700 italic mb-4">"TESR has been instrumental in helping us streamline our administrative processes. Their virtual assistant services have freed up our time to focus on strategic initiatives."</p>
+                    <div class="flex items-center">
+                        <img src="/api/placeholder/50/50" alt="John Doe" class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-blue-800">John Doe</p>
+                            <p class="text-gray-500">CEO, Example Corp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-left">
+                    <p class="text-gray-700 italic mb-4">"We've been using TESR for our bookkeeping needs, and they've been incredibly reliable and efficient. Their attention to detail is exceptional."</p>
+                    <div class="flex items-center">
+                        <img src="/api/placeholder/50/50" alt="Jane Smith" class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-blue-800">Jane Smith</p>
+                            <p class="text-gray-500">Owner, Small Business LLC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 bg-blue-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-8" data-animate="fade-in">Contact Us</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div data-animate="slide-up">
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div data-animate="slide-down">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-4">Our Information</h3>
+                    <p class="text-gray-700 mb-2">Address: 123 Main Street, Anytown, USA</p>
+                    <p class="text-gray-700 mb-2">Phone: (555) 123-4567</p>
+                    <p class="text-gray-700 mb-2">Email: info@tesr.com</p>
+                    <div class="flex space-x-4 mt-4">
+
+<!-- ABOUT SECTION -->
+<div class="bg-white py-16 px-4 sm:px-6 lg:px-8 overflow-hidden" data-animate="fade-in">
+    <div class="max-w-7xl mx-auto">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+            <div class="relative">
+                <div class="text-base max-w-prose lg:max-w-none">
+                    <h2 class="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl" data-animate="slide-in-left">
+                        About TESR: Your Trusted Administrative Partner
+                    </h2>
+                    <div class="mt-6 text-gray-500 prose prose-lg" data-animate="slide-in-left" data-animation-delay="200">
+                        <p>
+                            At TESR, we understand that managing administrative tasks can be a significant drain on your valuable time and resources. Founded in 2018, we've built a reputation for providing reliable, efficient, and cost-effective administrative solutions to businesses of all sizes. We empower you to focus on your core competencies and achieve your strategic goals.
+                        </p>
+                        <p>
+                            Our team of experienced administrative professionals is dedicated to delivering exceptional service. We pride ourselves on our attention to detail, proactive approach, and commitment to exceeding client expectations. We're not just a service provider; we're an extension of your team.
+                        </p>
+                        <h3 class="text-2xl font-semibold text-gray-900 mt-8" data-animate="slide-in-left" data-animation-delay="400">
+                            Our Mission
+                        </h3>
+                        <p data-animate="slide-in-left" data-animation-delay="500">
+                            To provide innovative and reliable administrative solutions that enable our clients to thrive. We strive to be a trusted partner, delivering exceptional value and building long-lasting relationships.
+                        </p>
+                        <ul class="list-disc space-y-2 mt-4" data-animate="slide-in-left" data-animation-delay="600">
+                            <li>Efficiency: Streamlining processes to save you time and money.</li>
+                            <li>Reliability: Providing consistent and dependable service you can count on.</li>
+                            <li>Innovation: Leveraging technology to deliver cutting-edge solutions.</li>
+                            <li>Partnership: Working collaboratively to achieve your business objectives.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 flex gap-4" data-animate="slide-in-left" data-animation-delay="700">
+                    <a href="/contact" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                        Contact Us
+                    </a>
+                    <a href="/services" class="inline-flex items-center justify-center px-5 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        Our Services
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 relative text-base max-w-prose lg:mt-0 lg:max-w-none" data-animate="fade-in" data-animation-delay="300">
+                <svg class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 text-gray-200 lg:hidden" width="400" height="400" fill="none" viewBox="0 0 400 400" aria-hidden="true">
+                    <defs>
+                        <pattern id="pattern-user" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="400" height="400" fill="url(#pattern-user)" />
+                </svg>
+                <div class="relative bg-white shadow-xl rounded-lg overflow-hidden">
+                    <img class="object-cover object-center w-full h-56 sm:h-72 md:h-96" src="/images/gf9ae895c45bbb0b6b94bdd65038df5beec4225917ff6a41f8646316a5d9251f4d4680e02dea2857e189c6b420a73585d30a71e7280b0eedca46af9c940fe52c0_640.jpg" alt="Team working collaboratively" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12" data-animate="fade-in">
+      <h2 class="text-3xl font-extrabold text-gray-800 sm:text-4xl lg:text-5xl mb-4">
+        Our Comprehensive Administrative Services
+      </h2>
+      <p class="text-lg text-gray-600">
+        We provide a wide range of administrative solutions to streamline your business operations and free up your time to focus on what matters most.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-animate="slide-in-up">
+
+      <!-- Service 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-56 object-cover" src="/images/g09a9202a923f2241dee1b581b810c92531bcf73b992d930ce28b89992307d4ba449134ade1aed49557e6abd36097eef8dca268c4a90c72d22e51979970cd7621_640.jpg" alt="Bookkeeping Services">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Bookkeeping & Accounting</h3>
+          <p class="text-gray-600 mb-4">
+            Accurate financial record-keeping is crucial. We offer comprehensive bookkeeping services, including accounts payable/receivable, bank reconciliation, and financial reporting.
+          </p>
+          <ul class="list-disc list-inside text-sm text-gray-500">
+            <li>Monthly Financial Statements</li>
+            <li>Budgeting & Forecasting</li>
+            <li>Tax Preparation Assistance</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-56 object-cover" src="/images/g6b26b8a920c13a2bd8687ff3965be073f251d662b01b201287757307cec41d314a474428ff71c3ed090a20f17ded221aa0f15e40d4acf30547cf6aa6931091d0_640.jpg" alt="Virtual Assistant Services">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Virtual Assistant Services</h3>
+          <p class="text-gray-600 mb-4">
+            Need help with day-to-day tasks? Our virtual assistants can handle scheduling, email management, travel arrangements, and more, allowing you to focus on your core business.
+          </p>
+          <ul class="list-disc list-inside text-sm text-gray-500">
+            <li>Calendar Management</li>
+            <li>Customer Service Support</li>
+            <li>Data Entry & Organization</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-56 object-cover" src="/images/gf9ae895c45bbb0b6b94bdd65038df5beec4225917ff6a41f8646316a5d9251f4d4680e02dea2857e189c6b420a73585d30a71e7280b0eedca46af9c940fe52c0_640.jpg" alt="HR Consulting">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Human Resources Consulting</h3>
+          <p class="text-gray-600 mb-4">
+            Navigate the complexities of HR with our expert consulting services. We can assist with employee onboarding, policy development, performance management, and compliance.
+          </p>
+          <ul class="list-disc list-inside text-sm text-gray-500">
+            <li>Recruitment & Hiring</li>
+            <li>Employee Relations</li>
+            <li>HR Compliance Audits</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-56 object-cover" src="/images/ge729e866abc26e2dcba4307de46b2af65d472422fccb8dd62e4cc8827499c7fbd54c66e7cc4de78c87335e4576e519612d6c6bd8a1db5a76a8cf031b60b7c80c_640.jpg" alt="Payroll Management">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Payroll Management</h3>
+          <p class="text-gray-600 mb-4">
+            Ensure accurate and timely payroll processing with our comprehensive payroll management services. We handle everything from calculating wages and taxes to generating pay stubs and filing reports.
+          </p>
+          <ul class="list-disc list-inside text-sm text-gray-500">
+            <li>Payroll Tax Filing</li>
+            <li>Direct Deposit Services</li>
+            <li>Employee Self-Service Portal</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1583508915443-9e4582c82182?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Project Management">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Management</h3>
+          <p class="text-gray-600 mb-4">
+            Keep your projects on track and within budget with our professional project management services. We can assist with planning, execution, monitoring, and closure.
+          </p>
+          <ul class="list-disc list-inside text-sm text-gray-500">
+            <li>Project Planning & Scheduling</li>
+            <li>Risk Management</li>
+            <li>Stakeholder Communication</li>
+          </ul>
+        </div>
+      </div>
+
+       <!-- Service 6 -->
+       <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img class="w-full h-56 object-cover" src="/images/photo-1556761175-5973dc0f32e7" alt="Project Management">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Data Analysis & Reporting</h3>
+          <p class="text-gray-600 mb-4">
+            Turn your data into actionable insights with our data analysis and reporting services. We can help you identify trends, track key performance indicators, and make data-driven decisions.
+          </p>
+          <ul class="list-disc list-inside text-sm text-gray-500">
+            <li>Data Visualization</li>
+            <li>Custom Reporting</li>
+            <li>Performance Dashboards</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section id="features" class="bg-gray-50 py-16 px-6 md:px-12 lg:px-24 w-full overflow-hidden" data-animate="fade-in">
+    <div class="container mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-animate="slide-in-down">
+                Streamline Your Operations with Our Expert Administrative Services
+            </h2>
+            <p class="mt-4 text-lg text-gray-600" data-animate="slide-in-up">
+                Focus on your core business while we handle the administrative tasks.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Feature 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 1h-3m3 1v-2M5 21h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Bookkeeping & Accounting</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Accurate financial records are crucial. We offer comprehensive bookkeeping services, including invoice management, expense tracking, and financial reporting, ensuring compliance and providing insights for informed decision-making.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-up">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Payroll Management</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Simplify your payroll process. We handle everything from calculating wages and deductions to generating paychecks and filing taxes, ensuring accurate and timely payments to your employees while staying compliant with regulations.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l.498 1.5a1 1 0 01-.2.984l-1.66 5.001a2 2 0 00-1.173 2.575c.566.765 1.645 1.064 2.877.702a4.865 4.865 0 00.904-4.435c.081-.085.233-.128.38-.128h5.415a1 1 0 01.93.585l.497 1.492a1 1 0 01-.2.984l-1.661 5.001a2 2 0 00-1.172 2.575c.566.765 1.645 1.064 2.877.702a4.865 4.865 0 00.904-4.435c.081-.085.233-.128.38-.128h5.415a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Tax Preparation & Filing</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Navigate the complexities of tax season with ease. Our experienced professionals prepare and file your taxes accurately and on time, minimizing your tax liabilities and maximizing your deductions while ensuring full compliance.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m12 0H7m15-10l-2.293 2.293a1 1 0 01-1.414-1.414L21 7"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Document Management</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Reduce clutter and improve efficiency with our document management solutions. We offer secure storage, organization, and retrieval of your important documents, ensuring easy access and compliance with record-keeping requirements.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-down">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10v-3m0 0l4-4m-4 4l4 4m-8-3a1.5 1.5 0 01-3 0m3 6a1.5 1.5 0 00-3 0m18-3v3m0 0l-4-4m4 4l-4 4m3-6a1.5 1.5 0 00-3 0m3 6a1.5 1.5 0 01-3 0m-5-3v3m0 0l-4-4m4 4l-4 4m3-6a1.5 1.5 0 00-3 0m3 6a1.5 1.5 0 01-3 0"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Virtual Assistant Services</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Delegate your time-consuming tasks to our skilled virtual assistants. We provide administrative, technical, or creative assistance, helping you focus on your priorities and achieve your business goals.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2m0 0l-1 5-1.48-3.714M15 15l9-2.25M7.5 10.75l-9 3.75m9-4l6 6m-15 2.25l7.5-3.75"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Consulting & Business Strategy</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Get expert guidance to optimize your business operations. We offer consulting services to help you identify areas for improvement, develop effective strategies, and achieve sustainable growth.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="py-16 bg-gray-50 overflow-hidden">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" data-animate="fade-in">
+                What Our Clients Say
+            </h2>
+            <p class="text-gray-600 text-lg" data-animate="fade-in" data-animate-delay="200">
+                We pride ourselves on providing exceptional administrative services. Here's what our clients are saying about their experience with TESR.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Testimonial 1 -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
+                <div class="flex items-center mb-4">
+                    <img src="https://api.placeholder.co/50/50" alt="Client Avatar" class="rounded-full w-10 h-10 mr-4">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Sarah Johnson</h3>
+                        <p class="text-sm text-gray-500">CEO, Innovate Solutions</p>
+                    </div>
+                </div>
+                <p class="text-gray-700">
+                    "TESR has been instrumental in streamlining our administrative processes. Their attention to detail and proactive approach have saved us valuable time and resources. Highly recommended!"
+                </p>
+                <div class="mt-4 flex items-center">
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-up">
+                <div class="flex items-center mb-4">
+                    <img src="https://api.placeholder.co/50/50" alt="Client Avatar" class="rounded-full w-10 h-10 mr-4">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Michael Davis</h3>
+                        <p class="text-sm text-gray-500">Finance Manager, Global Corp</p>
+                    </div>
+                </div>
+                <p class="text-gray-700">
+                    "We've been using TESR for our bookkeeping and payroll services for over a year now. Their accuracy and reliability are unmatched. They are a true partner in our business success."
+                </p>
+                <div class="mt-4 flex items-center">
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+                <div class="flex items-center mb-4">
+                    <img src="https://api.placeholder.co/50/50" alt="Client Avatar" class="rounded-full w-10 h-10 mr-4">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Emily Carter</h3>
+                        <p class="text-sm text-gray-500">Small Business Owner</p>
+                    </div>
+                </div>
+                <p class="text-gray-700">
+                    "As a small business owner, I was overwhelmed with administrative tasks. TESR took that burden off my shoulders, allowing me to focus on growing my business. Their service is professional, efficient, and affordable."
+                </p>
+                <div class="mt-4 flex items-center">
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+```html
+<body class="bg-gray-50 font-sans leading-normal text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-6 md:py-8 lg:py-10 shadow-md">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between">
+            <a href="#" class="text-2xl md:text-3xl lg:text-4xl font-bold hover:text-yellow-300 transition-colors duration-300">
+                TESR
+            </a>
+
+            <nav class="hidden md:flex space-x-6 lg:space-x-8 items-center">
+                <a href="#" class="hover:text-yellow-300 transition-colors duration-300">Home</a>
+                <a href="#" class="hover:text-yellow-300 transition-colors duration-300">Services</a>
+                <a href="#" class="hover:text-yellow-300 transition-colors duration-300">About Us</a>
+                <a href="#" class="hover:text-yellow-300 transition-colors duration-300">Contact</a>
+                <a href="#" class="bg-yellow-400 text-blue-900 py-2 px-4 rounded-lg hover:bg-yellow-300 transition-colors duration-300 font-semibold">Get a Quote</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden bg-blue-800 py-4 px-6">
+            <a href="#" class="block py-2 hover:text-yellow-300 transition-colors duration-300">Home</a>
+            <a href="#" class="block py-2 hover:text-yellow-300 transition-colors duration-300">Services</a>
+            <a href="#" class="block py-2 hover:text-yellow-300 transition-colors duration-300">About Us</a>
+            <a href="#" class="block py-2 hover:text-yellow-300 transition-colors duration-300">Contact</a>
+            <a href="#" class="block py-2 bg-yellow-400 text-blue-900 rounded-lg text-center hover:bg-yellow-300 transition-colors duration-300 font-semibold">Get a Quote</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <img src="/images/g6b26b8a920c13a2bd8687ff3965be073f251d662b01b201287757307cec41d314a474428ff71c3ed090a20f17ded221aa0f15e40d4acf30547cf6aa6931091d0_640.jpg" alt="Office Desk" class="absolute top-0 left-0 w-full h-full object-cover object-center">
+        <div class="absolute top-0 left-0 w-full h-full bg-blue-900 opacity-60"></div>
+        <div class="relative z-10 text-center text-white px-4 md:px-8 lg:px-12">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4" data-animate="fade-in-up">Streamline Your Business with TESR</h1>
+            <p class="text-lg md:text-xl lg:text-2xl mb-8" data-animate="fade-in-down">Expert Administrative Services for Seamless Operations.</p>
+            <a href="#" class="bg-yellow-400 text-blue-900 py-3 px-6 rounded-lg hover:bg-yellow-300 transition-colors duration-300 font-semibold" data-animate="slide-in-left">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-blue-900 mb-8" data-animate="fade-in-up">Our Comprehensive Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+                    <img src="/images/gf9ae895c45bbb0b6b94bdd65038df5beec4225917ff6a41f8646316a5d9251f4d4680e02dea2857e189c6b420a73585d30a71e7280b0eedca46af9c940fe52c0_640.jpg" alt="Bookkeeping" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Bookkeeping & Accounting</h3>
+                    <p class="text-gray-700">Accurate financial record-keeping, reporting, and analysis to help you make informed business decisions.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
+                    <img src="/images/g09a9202a923f2241dee1b581b810c92531bcf73b992d930ce28b89992307d4ba449134ade1aed49557e6abd36097eef8dca268c4a90c72d22e51979970cd7621_640.jpg" alt="Payroll Management" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Payroll Management</h3>
+                    <p class="text-gray-700">Efficient and compliant payroll processing, tax filing, and employee compensation management.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+                    <img src="/images/ge729e866abc26e2dcba4307de46b2af65d472422fccb8dd62e4cc8827499c7fbd54c66e7cc4de78c87335e4576e519612d6c6bd8a1db5a76a8cf031b60b7c80c_640.jpg" alt="Virtual Assistant Services" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-2">Virtual Assistant Services</h3>
+                    <p class="text-gray-700">Dedicated virtual assistants to handle administrative tasks, scheduling, customer support, and more.</p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#" class="bg-blue-900 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div data-animate="fade-in-left">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-4">About TESR</h2>
+                <p class="text-gray-700 mb-6">TESR is a leading provider of administrative services, dedicated to helping businesses streamline their operations and achieve greater efficiency. With years of experience and a team of skilled professionals, we offer a wide range of services tailored to meet the unique needs of our clients.</p>
+                <p class="text-gray-700 mb-6">Our mission is to provide reliable, cost-effective, and innovative solutions that empower businesses to focus on their core competencies and drive growth. We are committed to building long-term partnerships with our clients based on trust, transparency, and exceptional service.</p>
+                <a href="#" class="bg-yellow-400 text-blue-900 py-3 px-6 rounded-lg hover:bg-yellow-300 transition-colors duration-300 font-semibold">Read More About Us</a>
+            </div>
+            <div data-animate="fade-in-right">
+                <img src="https://images.unsplash.com/photo-1583508916314-2e559851677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Office Interior" class="rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-blue-900 mb-8" data-animate="fade-in-up">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial Card 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+                    <p class="text-gray-700 italic mb-4">"TESR has been instrumental in streamlining our administrative processes. Their attention to detail and commitment to excellence is truly commendable."</p>
+                    <div class="flex items-center">
+                        <img src="https://api.dicebear.com/7.x/ лица/svg?seed=JohnDoe" alt="John Doe" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-blue-800">John Doe</p>
+                            <p class="text-sm text-gray-500">CEO, Example Company</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial Card 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
+                    <p class="text-gray-700 italic mb-4">"We have been working with TESR for over a year, and their virtual assistant services have been invaluable. They are responsive, efficient, and always willing to go the extra mile."</p>
+                    <div class="flex items-center">
+                        <img src="https://api.dicebear.com/7.x/ лица/svg?seed=JaneSmith" alt="Jane Smith" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-blue-800">Jane Smith</p>
+                            <p class="text-sm text-gray-500">Marketing Manager, Another Company</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial Card 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+                    <p class="text-gray-700 italic mb-4">"TESR's bookkeeping services have been a game-changer for our business. They have helped us stay organized, compliant, and on top of our finances."</p>
+                    <div class="flex items-center">
+                        <img src="https://api.dicebear.com/7.x/ лица/svg?seed=PeterJones" alt="Peter Jones" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-blue-800">Peter Jones</p>
+                            <p class="text-sm text-gray-500">Owner, Small Business</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-blue-900 mb-8" data-animate="fade-in-up">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-900 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">Send Message</button>
+                    </form>
+                </div>
+                <!-- Contact Information -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-
+
+<!-- FOOTER SECTION -->
+<footer class="bg-navy-800 text-gray-300 py-12 px-6 md:px-12 lg:px-24">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Company Info -->
+        <div class="mb-6 md:mb-0">
+            <h3 class="text-xl font-semibold text-yellow-500 mb-4">TESR Administrative Services</h3>
+            <p class="text-sm">Your trusted partner for efficient and reliable administrative solutions. We empower businesses to focus on growth by handling their essential back-office tasks.</p>
+            <div class="flex mt-4 space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white" aria-label="Facebook"><i class="fab fa-facebook-square fa-lg"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white" aria-label="Twitter"><i class="fab fa-twitter-square fa-lg"></i></a>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="mb-6 md:mb-0">
+            <h3 class="text-xl font-semibold text-yellow-500 mb-4">Our Services</h3>
+            <ul class="list-none pl-0">
+                <li class="mb-2">
+                    <a href="#" class="hover:text-yellow-300 text-sm">Virtual Assistant Services</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="hover:text-yellow-300 text-sm">Bookkeeping & Accounting</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="hover:text-yellow-300 text-sm">Payroll Management</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="hover:text-yellow-300 text-sm">Customer Support</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="hover:text-yellow-300 text-sm">Data Entry & Management</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="mb-6 md:mb-0">
+            <h3 class="text-xl font-semibold text-yellow-500 mb-4">Quick Links</h3>
+            <ul class="list-none pl-0">
+                <li class="mb-2">
+                    <a href="#" class="hover:text-yellow-300 text-sm">About Us</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="hover:text-yellow-300 text-sm">Services</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="hover:text-yellow-300 text-sm">Pricing</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="hover:text-yellow-300 text-sm">Testimonials</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="hover:text-yellow-300 text-sm">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+            <h3 class="text-xl font-semibold text-yellow-500 mb-4">Contact Us</h3>
+            <p class="text-sm mb-2">
+                <i class="fas fa-map-marker-alt mr-2"></i> 123 Main Street, Anytown, USA
+            </p>
+            <p class="text-sm mb-2">
+                <i class="fas fa-phone mr-2"></i> (555) 123-4567
+            </p>
+            <p class="text-sm mb-2">
+                <i class="fas fa-envelope mr-2"></i> info@tesrservices.com
+            </p>
+            <p class="text-sm">
+                <i class="fas fa-clock mr-2"></i> Mon-Fri: 9am - 5pm
+            </p>
+        </div>
+
+    </div>
+
+    <div class="mt-12 text-center border-t border-gray-700 pt-6">
+        <p class="text-sm">&copy; 2023 TESR Administrative Services. All rights reserved.</p>
+    </div>
+</footer>
+
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            // Animation system
+            const observer=new IntersectionObserver(entries=>{
+                entries.forEach((entry,i)=>{
+                    if(entry.isIntersecting){
+                        setTimeout(()=>{
+                            entry.target.classList.add('visible');
+                            // Handle staggered children if using that animation style
+                            if(entry.target.getAttribute('data-animate')==='stagger'){
+                                Array.from(entry.target.children).forEach((child,childIndex)=>{
+                                    child.style.setProperty('--child-index',childIndex);
+                                });
+                            }
+                        },i*100);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },{threshold:0.15,rootMargin:'0px 0px -100px 0px'});
+            
+            document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
+            
+            // Fixed navigation
+            const nav=document.querySelector('nav');
+            if(nav){
+                const handleScroll=()=>{
+                    nav.classList[window.scrollY>100?'add':'remove']('nav-fixed');
+                };
+                window.addEventListener('scroll',handleScroll,{passive:true});
+                handleScroll();
+            }
+            
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+                anchor.addEventListener('click',function(e){
+                    e.preventDefault();
+                    const targetId=this.getAttribute('href');
+                    if(targetId==='#')return;
+                    const target=document.querySelector(targetId);
+                    if(target){
+                        const targetPosition=target.getBoundingClientRect().top+window.pageYOffset-(nav?nav.offsetHeight:0)-20;
+                        window.scrollTo({top:targetPosition,behavior:'smooth'});
+                    }
+                });
+            });
+            
+            // Scroll progress indicator
+            const height=Math.max(
+                document.body.scrollHeight,
+                document.body.offsetHeight,
+                document.documentElement.clientHeight,
+                document.documentElement.scrollHeight,
+                document.documentElement.offsetHeight
+            )-window.innerHeight;
+            
+            window.addEventListener('scroll',()=>{
+                document.documentElement.style.setProperty('--scroll-progress',(window.scrollY/height*100)+'%');
+            },{passive:true});
+            
+            // Mobile menu
+            const menuToggle=document.getElementById('mobile-menu-toggle');
+            const mobileMenu=document.getElementById('mobile-menu');
+            if(menuToggle&&mobileMenu){
+                menuToggle.addEventListener('click',()=>{
+                    mobileMenu.classList.toggle('hidden');
+                    document.body.classList.toggle('overflow-hidden');
+                });
+                document.addEventListener('click',e=>{
+                    if(mobileMenu&&!mobileMenu.classList.contains('hidden')&&
+                        menuToggle&&!menuToggle.contains(e.target)&&!mobileMenu.contains(e.target)){
+                        mobileMenu.classList.add('hidden');
+                        document.body.classList.remove('overflow-hidden');
+                    }
+                });
+            }
+            
+            // Accordions
+            document.querySelectorAll('[data-accordion-target]').forEach(btn=>{
+                btn.addEventListener('click',()=>{
+                    const target=document.querySelector(btn.getAttribute('data-accordion-target'));
+                    if(target){
+                        const isExpanded=btn.getAttribute('aria-expanded')==='true';
+                        target.classList.toggle('hidden');
+                        btn.setAttribute('aria-expanded',isExpanded?'false':'true');
+                        const icon=btn.querySelector('.accordion-icon');
+                        if(icon)icon.classList.toggle('rotate-180');
+                    }
+                });
+            });
+            
+            // Form validation (optional enhancement)
+            document.querySelectorAll('form').forEach(form=>{
+                form.addEventListener('submit',function(e){
+                    let valid=true;
+                    const requiredFields=form.querySelectorAll('[required]');
+                    
+                    requiredFields.forEach(field=>{
+                        if(!field.value.trim()){
+                            valid=false;
+                            field.classList.add('border-red-500');
+                            
+                            // Add error message if not already present
+                            let errorMsg=field.parentNode.querySelector('.error-message');
+                            if(!errorMsg){
+                                errorMsg=document.createElement('p');
+                                errorMsg.className='text-red-500 text-sm mt-1 error-message';
+                                errorMsg.textContent='This field is required';
+                                field.parentNode.appendChild(errorMsg);
+                            }
+                        }else{
+                            field.classList.remove('border-red-500');
+                            const errorMsg=field.parentNode.querySelector('.error-message');
+                            if(errorMsg)errorMsg.remove();
+                        }
+                    });
+                    
+                    if(!valid){
+                        e.preventDefault();
+                    }
+                });
+            });
+            
+            // Tabs functionality if present
+            document.querySelectorAll('[data-tabs]').forEach(tabGroup=>{
+                const tabs=tabGroup.querySelectorAll('[data-tab]');
+                const tabContents=document.querySelectorAll('[data-tab-content]');
+                
+                tabs.forEach(tab=>{
+                    tab.addEventListener('click',()=>{
+                        const target=tab.getAttribute('data-tab');
+                        
+                        // Update active tab state
+                        tabs.forEach(t=>t.classList.remove('active-tab','text-primary-600','border-primary-600'));
+                        tab.classList.add('active-tab','text-primary-600','border-primary-600');
+                        
+                        // Show correct content
+                        tabContents.forEach(content=>{
+                            if(content.getAttribute('data-tab-content')===target){
+                                content.classList.remove('hidden');
+                            }else{
+                                content.classList.add('hidden');
+                            }
+                        });
+                    });
+                });
+            });
+            
+            // Carousels
+            document.querySelectorAll('[data-carousel]').forEach(carousel=>{
+                const slides=carousel.querySelectorAll('[data-slide]');
+                const prevBtn=carousel.querySelector('[data-carousel-prev]');
+                const nextBtn=carousel.querySelector('[data-carousel-next]');
+                
+                if(slides.length>0&&prevBtn&&nextBtn){
+                    let current=0,interval=null;
+                    
+                    slides[0].classList.remove('hidden');
+                    
+                    const updateIndicators=()=>{
+                        carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                            ind.classList[i===current?'add':'remove']('bg-primary-600');
+                            ind.classList[i!==current?'add':'remove']('bg-gray-300');
+                        });
+                    };
+                    
+                    const showSlide=idx=>{
+                        slides.forEach(s=>s.classList.add('hidden'));
+                        slides[idx].classList.remove('hidden');
+                        updateIndicators();
+                    };
+                    
+                    nextBtn.addEventListener('click',()=>{
+                        current=(current+1)%slides.length;
+                        showSlide(current);
+                    });
+                    
+                    prevBtn.addEventListener('click',()=>{
+                        current=(current-1+slides.length)%slides.length;
+                        showSlide(current);
+                    });
+                    
+                    updateIndicators();
+                    
+                    const startAuto=()=>{
+                        if(carousel.hasAttribute('data-auto')&&!interval){
+                            interval=setInterval(()=>{
+                                current=(current+1)%slides.length;
+                                showSlide(current);
+                            },5000);
+                        }
+                    };
+                    
+                    carousel.addEventListener('mouseenter',()=>{
+                        if(interval){clearInterval(interval);interval=null;}
+                    });
+                    
+                    carousel.addEventListener('mouseleave',startAuto);
+                    
+                    carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                        ind.addEventListener('click',()=>{
+                            current=i;
+                            showSlide(current);
+                        });
+                    });
+                    
+                    startAuto();
+                }
+            });
+            
+            // Initialize counters for stats sections if they exist
+            document.querySelectorAll('[data-counter]').forEach(counter=>{
+                const target=parseInt(counter.getAttribute('data-counter')||'0',10);
+                const duration=1500; // Animation duration in ms
+                const step=Math.ceil(target/50); // How much to increment per step
+                let current=0;
+                
+                const updateCounter=()=>{
+                    current+=step;
+                    if(current>target)current=target;
+                    
+                    counter.textContent=current.toString().replace(/B(?=(d{3})+(?!d))/g,',');
+                    
+                    if(current<target){
+                        requestAnimationFrame(updateCounter);
+                    }
+                };
+                
+                // Start counting when element is in view
+                const observer=new IntersectionObserver(entries=>{
+                    entries.forEach(entry=>{
+                        if(entry.isIntersecting){
+                            updateCounter();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },{threshold:0.5});
+                
+                observer.observe(counter);
+            });
+        });
+    </script>
+</body>
+</html>
