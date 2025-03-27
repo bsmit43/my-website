@@ -3,212 +3,240 @@
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="tesr - Contact tesr">
-      <title>tesr - Contact tesr</title>
+      <meta name="description" content="test - Contact test">
+      <title>test - Contact test</title>
       <script src="https://cdn.tailwindcss.com"></script>
       <style>
         
-        body{font-family:'Inter', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
-        h1,h2,h3,h4,h5,h6{font-family:'Inter', sans-serif}
+        body{font-family:'Source Sans Pro', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'Playfair Display', serif}
         section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
         header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
-        [data-animate]{opacity:0;transform:scale(.94);transition:opacity .6s ease-out,transform .6s cubic-bezier(.175,.885,.32,1.275)}[data-animate].visible{opacity:1;transform:scale(1)}
+        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .7s ease-out,transform .7s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}[data-animate="stagger"]>*{opacity:0;transform:translateY(15px);transition:opacity .5s,transform .5s;transition-delay:calc(var(--child-index,0)*.1s)}[data-animate="stagger"].visible>*{opacity:1;transform:translateY(0)}
         .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
         ::-webkit-scrollbar{width:8px;height:8px}
         ::-webkit-scrollbar-track{background:#f1f1f1}
-        ::-webkit-scrollbar-thumb{background:hsl(347, 76%, 40%);border-radius:4px}
-        ::-webkit-scrollbar-thumb:hover{background:hsl(347, 76%, 30%)}
-        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(347, 76%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        ::-webkit-scrollbar-thumb{background:hsl(146, 71%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(146, 71%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(146, 71%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
         @media print{[data-animate]{opacity:1;transform:none}}
-    
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        /* Add custom styles here if needed */
     
       </style>
     </head>
     <body>
-      <nav class="absolute top-0 left-0 w-full py-6 px-4 sm:px-6 lg:px-8 z-20" data-animate="fade-down">
-            <div class="container mx-auto flex items-center justify-between">
-                <a href="#" class="text-white text-2xl font-bold">TESR</a>
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="#" class="text-gray-200 hover:text-white transition duration-300">Services</a>
-                    <a href="#" class="text-gray-200 hover:text-white transition duration-300">About Us</a>
-                    <a href="#" class="text-gray-200 hover:text-white transition duration-300">Testimonials</a>
-                    <a href="#" class="text-gray-200 hover:text-white transition duration-300">Contact</a>
-                    <a href="#" class="bg-yellow-500 text-blue-900 py-2 px-4 rounded-lg hover:bg-yellow-600 transition duration-300">Get a Quote</a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+      <nav class="relative px-6 py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="/" class="text-xl font-semibold text-white">
+                test Cleaning
+            </a>
+            <div class="hidden lg:flex space-x-6">
+                <a href="#services" class="text-white hover:text-orange-300 transition duration-300">Services</a>
+                <a href="#about" class="text-white hover:text-orange-300 transition duration-300">About Us</a>
+                <a href="#testimonials" class="text-white hover:text-orange-300 transition duration-300">Testimonials</a>
+                <a href="#contact" class="text-white hover:text-orange-300 transition duration-300">Contact</a>
             </div>
-
-            <!-- Mobile Menu (Hidden by default) -->
-            <div id="mobile-menu" class="hidden md:hidden bg-blue-900 bg-opacity-90 absolute top-full left-0 w-full py-4 px-6 z-10">
-                <a href="#" class="block py-2 text-gray-200 hover:text-white transition duration-300">Services</a>
-                <a href="#" class="block py-2 text-gray-200 hover:text-white transition duration-300">About Us</a>
-                <a href="#" class="block py-2 text-gray-200 hover:text-white transition duration-300">Testimonials</a>
-                <a href="#" class="block py-2 text-gray-200 hover:text-white transition duration-300">Contact</a>
-                <a href="#" class="block py-2 bg-yellow-500 text-blue-900 rounded-lg text-center hover:bg-yellow-600 transition duration-300">Get a Quote</a>
+            <button class="lg:hidden text-white focus:outline-none" id="mobile-menu-button">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="lg:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#services" class="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#about" class="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="#testimonials" class="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+                <a href="#contact" class="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
-        </nav>
+        </div>
+    </nav>
       <header class="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
         <div class="container mx-auto px-4 py-12">
-          <h1 class="text-3xl font-bold">tesr - Contact tesr</h1>
+          <h1 class="text-3xl font-bold">test - Contact test</h1>
         </div>
       </header>
       <main class="container mx-auto px-4 py-8">
         <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - tesr Administrative Services</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    /* Custom Styles - Ensure consistency with homepage */
-    .bg-gradient-custom {
-      background: linear-gradient(to right, #1e3a8a, #3b82f6); /* Navy to Light Blue */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - test Cleaning</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles - Add to a separate CSS file for production */
+        .bg-gradient-custom {
+            background: linear-gradient(to right, #3b82f6, #6366f1);
+        }
+
+        .shadow-custom {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .transition-custom {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
 </head>
-<body class="font-sans antialiased text-gray-800">
 
-  <!-- Header (Consistent with Homepage) -->
-  <header class="bg-gradient-custom text-white py-6 shadow-md">
-    <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between">
-        <div>
-          <a href="/" class="text-2xl font-bold">tesr</a>
-        </div>
-        <nav class="hidden md:flex space-x-6">
-          <a href="/" class="hover:text-yellow-300">Home</a>
-          <a href="/services" class="hover:text-yellow-300">Services</a>
-          <a href="/about" class="hover:text-yellow-300">About Us</a>
-          <a href="/contact" class="hover:text-yellow-300">Contact</a>
-        </nav>
-        <div class="md:hidden">
-          <button id="mobile-menu-button" class="text-white focus:outline-none">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="md:hidden mt-4" id="mobile-menu">
-        <a href="/" class="block py-2 px-4 hover:bg-blue-700">Home</a>
-        <a href="/services" class="block py-2 px-4 hover:bg-blue-700">Services</a>
-        <a href="/about" class="block py-2 px-4 hover:bg-blue-700">About Us</a>
-        <a href="/contact" class="block py-2 px-4 hover:bg-blue-700">Contact</a>
-      </div>
-    </div>
-  </header>
+<body class="bg-gray-50 font-sans">
 
-  <!-- Contact Section -->
-  <section class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-        <!-- Contact Form -->
-        <div class="bg-white rounded-lg shadow-md p-8" data-animate="fade-in">
-          <h2 class="text-2xl font-semibold mb-6 text-gray-800">Send us a Message</h2>
-          <form action="#" method="POST">
-            <div class="mb-4">
-              <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
-              <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name">
+    <!-- Header -->
+    <header class="bg-gradient-custom text-white py-6 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="/" class="text-2xl font-bold hover:text-gray-200 transition-colors duration-200">test Cleaning</a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="/" class="hover:text-gray-200 transition-colors duration-200">Home</a>
+                    <a href="/services" class="hover:text-gray-200 transition-colors duration-200">Services</a>
+                    <a href="/about" class="hover:text-gray-200 transition-colors duration-200">About Us</a>
+                    <a href="/contact" class="hover:text-gray-200 transition-colors duration-200">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none focus:text-gray-200">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="mb-4">
-              <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email</label>
-              <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email">
-            </div>
-            <div class="mb-4">
-              <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Your Phone Number</label>
-              <input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Phone Number">
-            </div>
-            <div class="mb-6">
-              <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
-              <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-              Send Message
-            </button>
-          </form>
         </div>
 
-        <!-- Contact Information -->
-        <div class="bg-white rounded-lg shadow-md p-8" data-animate="fade-in">
-          <h2 class="text-2xl font-semibold mb-6 text-gray-800">Contact Information</h2>
-          <div class="mb-4">
-            <h3 class="text-lg font-semibold text-gray-700 mb-2">Address</h3>
-            <p class="text-gray-600">123 Main Street<br>Anytown, CA 12345<br>United States</p>
-          </div>
-          <div class="mb-4">
-            <h3 class="text-lg font-semibold text-gray-700 mb-2">Phone</h3>
-            <p class="text-gray-600">Main: (555) 123-4567<br>Support: (555) 987-6543</p>
-          </div>
-          <div class="mb-4">
-            <h3 class="text-lg font-semibold text-gray-700 mb-2">Email</h3>
-            <p class="text-gray-600">General: info@tesr.com<br>Support: support@tesr.com</p>
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold text-gray-700 mb-2">Business Hours</h3>
-            <p class="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
-          </div>
-          <div class="mt-6">
-            <h3 class="text-lg font-semibold text-gray-700 mb-2">Map</h3>
-            <!-- Replace with actual map embed -->
-            <img src="https://api.placeholder.co/600x300" alt="Map Placeholder" class="rounded-lg shadow-md">
-          </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden bg-gradient-custom md:hidden py-2">
+            <div class="container mx-auto px-4">
+                <a href="/" class="block py-2 px-4 text-white hover:bg-blue-600 transition-colors duration-200">Home</a>
+                <a href="/services" class="block py-2 px-4 text-white hover:bg-blue-600 transition-colors duration-200">Services</a>
+                <a href="/about" class="block py-2 px-4 text-white hover:bg-blue-600 transition-colors duration-200">About Us</a>
+                <a href="/contact" class="block py-2 px-4 text-white hover:bg-blue-600 transition-colors duration-200">Contact</a>
+            </div>
         </div>
+    </header>
 
-      </div>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4" data-animate="fade-in">Contact Us</h2>
+                <p class="text-gray-600" data-animate="fade-in" data-animate-delay="200">We'd love to hear from you! Get in touch with us for any inquiries or to schedule a cleaning service.</p>
+            </div>
 
-  <!-- Footer (Consistent with Homepage) -->
-  <footer class="bg-gray-800 text-white py-12">
-    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div>
-        <h4 class="text-xl font-semibold mb-4">tesr</h4>
-        <p class="text-gray-400">Your trusted partner for administrative solutions. We streamline your operations so you can focus on what matters most.</p>
-      </div>
-      <div>
-        <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
-        <ul class="text-gray-400">
-          <li><a href="/" class="hover:text-yellow-300">Home</a></li>
-          <li><a href="/services" class="hover:text-yellow-300">Services</a></li>
-          <li><a href="/about" class="hover:text-yellow-300">About Us</a></li>
-          <li><a href="/contact" class="hover:text-yellow-300">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
-        <p class="text-gray-400">123 Main Street, Anytown, CA 12345</p>
-        <p class="text-gray-400">(555) 123-4567</p>
-        <p class="text-gray-400">info@tesr.com</p>
-      </div>
-    </div>
-    <div class="text-center mt-8">
-      <p class="text-gray-500">© 2024 tesr. All rights reserved.</p>
-    </div>
-  </footer>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div class="shadow-md rounded-lg p-8" data-animate="slide-in-left">
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Your Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Phone Number">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-colors duration-200" type="submit">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
 
-  <script>
-    // Mobile Menu Toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+                <!-- Contact Information -->
+                <div class="shadow-md rounded-lg p-8" data-animate="slide-in-right">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Our Contact Information</h3>
+                    <div class="mb-4">
+                        <p class="text-gray-700 font-bold">Address:</p>
+                        <p class="text-gray-600">123 Cleaning Street, Anytown, USA</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-gray-700 font-bold">Phone:</p>
+                        <p class="text-gray-600"><a href="tel:+15551234567" class="text-blue-500 hover:text-blue-700 transition-colors duration-200">+1 (555) 123-4567</a></p>
+                        <p class="text-gray-600"><a href="tel:+15559876543" class="text-blue-500 hover:text-blue-700 transition-colors duration-200">+1 (555) 987-6543</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="text-gray-700 font-bold">Email:</p>
+                        <p class="text-gray-600"><a href="mailto:info@testcleaning.com" class="text-blue-500 hover:text-blue-700 transition-colors duration-200">info@testcleaning.com</a></p>
+                        <p class="text-gray-600"><a href="mailto:support@testcleaning.com" class="text-blue-500 hover:text-blue-700 transition-colors duration-200">support@testcleaning.com</a></p>
+                    </div>
+                    <div>
+                        <p class="text-gray-700 font-bold">Business Hours:</p>
+                        <p class="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        <p class="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+                        <p class="text-gray-600">Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
 
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+            <!-- Map Placeholder -->
+            <div class="mt-12 shadow-md rounded-lg overflow-hidden" data-animate="fade-in" data-animate-delay="400">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.994158687758!2d-73.98513008455907!3d40.74844047932833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b311d3dd%3A0x29404e4056b2b506!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1680788262601!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-lg font-semibold mb-4">About test Cleaning</h4>
+                <p class="text-gray-400">test Cleaning is a professional cleaning service dedicated to providing high-quality cleaning solutions for homes and businesses. We pride ourselves on our attention to detail and commitment to customer satisfaction.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                <ul class="text-gray-400">
+                    <li><a href="/" class="hover:text-white transition-colors duration-200">Home</a></li>
+                    <li><a href="/services" class="hover:text-white transition-colors duration-200">Services</a></li>
+                    <li><a href="/about" class="hover:text-white transition-colors duration-200">About Us</a></li>
+                    <li><a href="/contact" class="hover:text-white transition-colors duration-200">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contact Information</h4>
+                <p class="text-gray-400">123 Cleaning Street, Anytown, USA</p>
+                <p class="text-gray-400"><a href="mailto:info@testcleaning.com" class="hover:text-white transition-colors duration-200">info@testcleaning.com</a></p>
+                <p class="text-gray-400"><a href="tel:+15551234567" class="hover:text-white transition-colors duration-200">+1 (555) 123-4567</a></p>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p class="text-gray-500">© 2024 test Cleaning. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Simple animation using JavaScript (optional)
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('[data-animate]');
+
+            animatedElements.forEach(element => {
+                const animationType = element.dataset.animate;
+                const delay = element.dataset.animateDelay || 0;
+
+                setTimeout(() => {
+                    element.classList.add('animate__animated', `animate__${animationType}`);
+                }, delay);
+            });
+        });
+    </script>
+
+    <!-- Include Animate.css library for animations (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </body>
+
 </html>
       </main>
       
