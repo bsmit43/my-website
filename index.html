@@ -1,781 +1,401 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="test - Professional website">
-    <meta name="generator" content="Website Generator">
-    <meta name="theme-color" content="hsl(22, 71%, 40%)">
-    <title>test</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap' rel='stylesheet'>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        body{font-family:'Source Sans Pro', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
-        h1,h2,h3,h4,h5,h6{font-family:'Playfair Display', serif}
-        section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
-        header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
-        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .7s ease-out,transform .7s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}[data-animate="stagger"]>*{opacity:0;transform:translateY(15px);transition:opacity .5s,transform .5s;transition-delay:calc(var(--child-index,0)*.1s)}[data-animate="stagger"].visible>*{opacity:1;transform:translateY(0)}
-        .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
-        ::-webkit-scrollbar{width:8px;height:8px}
-        ::-webkit-scrollbar-track{background:#f1f1f1}
-        ::-webkit-scrollbar-thumb{background:hsl(22, 71%, 40%);border-radius:4px}
-        ::-webkit-scrollbar-thumb:hover{background:hsl(22, 71%, 30%)}
-        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(22, 71%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
-        @media print{[data-animate]{opacity:1;transform:none}}
-    </style>
-    
-    <script>
-        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(22, 71%, 95%)","100":"hsl(22, 71%, 90%)","200":"hsl(22, 71%, 80%)","300":"hsl(22, 71%, 70%)","400":"hsl(22, 71%, 60%)","500":"hsl(22, 71%, 50%)","600":"hsl(22, 71%, 40%)","700":"hsl(22, 71%, 30%)","800":"hsl(22, 71%, 20%)","900":"hsl(22, 71%, 10%)"}},fontFamily:{sans:[''Source Sans Pro'','system-ui','sans-serif'],heading:[''Playfair Display'','serif']}}}}
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test - Administrative Services</title>
+  <meta name="description" content="Website for test, specializing in Administrative Services">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AI is expected to include font links and Tailwind config script within its generated sections -->
+  <style>
+    body { margin: 0; overflow-x: hidden; width: 100%; max-width: 100%; font-family: sans-serif; /* Default */ }
+    section, header, footer, nav { width: 100%; max-width: 100vw; overflow-x: hidden; }
+  </style>
 </head>
-<body class="antialiased text-gray-800">
-    <main>
-        
-<!-- NAV SECTION -->
-
-
-<!-- HEADER SECTION -->
-<header class="relative bg-blue-900 overflow-hidden">
-    <div class="absolute inset-0">
-        <img src="/images/gf561b9703b8271ef0bef7ddcf3dd18bbb2e87f1fa2b4b788af3833648a3862466dbf7e599d34cffc63cf15176a796b8d1e20830c0391cbff9024186e675d7252_640.jpg" alt="Cleaning Service" class="w-full h-full object-cover opacity-50">
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-700 opacity-75"></div>
-    </div>
-
-    <nav class="relative px-6 py-4">
-        <div class="container mx-auto flex items-center justify-between">
-            <a href="/" class="text-xl font-semibold text-white">
-                test Cleaning
-            </a>
-            <div class="hidden lg:flex space-x-6">
-                <a href="#services" class="text-white hover:text-orange-300 transition duration-300">Services</a>
-                <a href="#about" class="text-white hover:text-orange-300 transition duration-300">About Us</a>
-                <a href="#testimonials" class="text-white hover:text-orange-300 transition duration-300">Testimonials</a>
-                <a href="#contact" class="text-white hover:text-orange-300 transition duration-300">Contact</a>
+<body class="antialiased">
+  
+<!-- START SECTION: NAV -->
+<nav class="bg-white shadow-md sticky top-0 z-50" data-animate="slide-in-top">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="/" class="flex-shrink-0">
+                    <span class="font-bold text-xl text-indigo-600">test</span>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/" class="text-gray-500 hover:bg-indigo-100 hover:text-indigo-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="/about" class="text-gray-500 hover:bg-indigo-100 hover:text-indigo-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/services" class="text-gray-500 hover:bg-indigo-100 hover:text-indigo-700 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="/contact" class="text-gray-500 hover:bg-indigo-100 hover:text-indigo-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
             </div>
-            <button class="lg:hidden text-white focus:outline-none" id="mobile-menu-button">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-        <div class="lg:hidden hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#services" class="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="#about" class="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
-                <a href="#testimonials" class="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
-                <a href="#contact" class="text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/quote" class="bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium">Get a Quote</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false" x-bind:aria-expanded="mobileMenuOpen">
+                    <span class="sr-only">Open main menu</span>
+                    <svg x-show="!mobileMenuOpen" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg x-show="mobileMenuOpen" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </div>
         </div>
-    </nav>
-
-    <div class="relative container mx-auto px-6 py-24 md:py-32 lg:py-40 text-center text-white">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" data-animate="fade-in">
-            Your Trusted Cleaning Partner
-        </h1>
-        <p class="text-lg md:text-xl mb-8" data-animate="fade-in" data-animate-delay="200">
-            Providing exceptional cleaning services for homes and businesses.
-        </p>
-        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300" data-animate="fade-in" data-animate-delay="400">
-            Get a Free Quote
-        </a>
     </div>
 
+    <div class="md:hidden" id="mobile-menu" x-show="mobileMenuOpen" x-cloak>
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="/" class="text-gray-500 hover:bg-indigo-100 hover:text-indigo-700 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="/about" class="text-gray-500 hover:bg-indigo-100 hover:text-indigo-700 block px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="/services" class="text-gray-500 hover:bg-indigo-100 hover:text-indigo-700 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+            <a href="/contact" class="text-gray-500 hover:bg-indigo-100 hover:text-indigo-700 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            <a href="/quote" class="bg-indigo-600 hover:bg-indigo-700 text-white block px-3 py-2 rounded-md text-base font-medium">Get a Quote</a>
+        </div>
+    </div>
     <script>
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('nav', () => ({
+                mobileMenuOpen: false,
+            }))
+        })
     </script>
-</header>
+</nav>
+<!-- END SECTION: NAV -->
 
-<!-- ABOUT SECTION -->
-<section id="about" class="py-20 bg-white">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div class="md:order-2" data-animate="fade-right">
-        <img src="/images/g3033f6dac34c770b1cd6366d64d09bf7c9441ab4ed61e0c97fee37da517121d3a17dc3e1999cf96fc6edc7e3f312ee68_640-1.jpg" alt="Cleaning Services" class="rounded-xl shadow-lg">
+<!-- START SECTION: HEADER -->
+<header class="bg-gray-100">
+  <div class="relative">
+    <div class="absolute inset-0">
+      <img src="/api/placeholder/1600/800" alt="Modern office space" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-teal-500 opacity-70"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 min-h-[500px] flex items-center justify-center">
+      <div class="text-center">
+        <h1 class="text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl" data-animate="fade-in-up">
+          Streamline Your Business with Test Administrative Services
+        </h1>
+        <p class="mt-6 text-xl text-blue-100 max-w-3xl mx-auto" data-animate="fade-in-up" data-animate-delay="200">
+          Focus on what you do best. Let us handle the administrative tasks that slow you down. From bookkeeping to virtual assistance, we've got you covered.
+        </p>
+        <div class="mt-10 flex items-center justify-center gap-x-6" data-animate="fade-in-up" data-animate-delay="400">
+          <a href="#services" class="bg-white text-blue-600 hover:bg-blue-50 font-medium py-3 px-6 rounded-md shadow-md transition-colors duration-200">
+            Explore Our Services
+          </a>
+          <a href="#contact" class="text-white hover:text-blue-100 font-medium py-3 px-6 rounded-md transition-colors duration-200">
+            Contact Us <span aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
-      <div class="md:order-1" data-animate="fade-left">
-        <h2 class="text-3xl lg:text-4xl font-semibold text-blue-900 mb-6">About Test Cleaning Services</h2>
+    </div>
+  </div>
+</header>
+<!-- END SECTION: HEADER -->
+
+<!-- START SECTION: ABOUT -->
+<section id="about" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="md:flex md:items-center md:justify-between gap-8" data-animate="fade-in">
+      <div class="md:w-1/2">
+        <img src="/api/placeholder/600/400" alt="Team working collaboratively" class="rounded-lg shadow-md">
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-extrabold text-gray-900 mb-4">About Test: Your Administrative Partner</h2>
         <p class="text-gray-700 leading-relaxed mb-6">
-          At Test Cleaning Services, we're more than just a cleaning company; we're your partners in creating a healthier, happier home or workplace.  Founded in 2015, we've built a reputation for excellence by consistently delivering exceptional cleaning services tailored to our clients' unique needs.
+          At Test, we understand the challenges of running a business. Our mission is to provide comprehensive administrative solutions, allowing you to focus on your core competencies and drive growth. We are more than just a service provider; we are your trusted partner in achieving operational excellence.
         </p>
         <p class="text-gray-700 leading-relaxed mb-6">
-          Our team of highly trained and experienced cleaning professionals is committed to providing meticulous attention to detail and using eco-friendly cleaning products whenever possible. We believe in creating a clean environment without compromising the health of your family, pets, or the planet.
+          Founded in 2015, Test has a proven track record of helping businesses across various industries streamline their administrative processes. Our team of experienced professionals is dedicated to delivering exceptional service and tailored solutions that meet your unique needs.
         </p>
-        <p class="text-gray-700 leading-relaxed mb-6">
-          We offer a wide range of cleaning services, from regular house cleaning and deep cleaning to move-in/move-out cleaning and commercial cleaning.  No matter the size or scope of the job, we approach every project with the same dedication and commitment to quality.
-        </p>
-        <div class="flex items-center space-x-4">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-orange-500">
-            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM8.547 9.547a.75.75 0 00-1.06 1.06l3.217 3.217H5.16a.75.75 0 000 1.5h5.547l-3.217 3.217a.75.75 0 001.06 1.06l4.5-4.5a.75.75 0 000-1.06l-4.5-4.5z" clip-rule="evenodd" />
-          </svg>
-          <a href="#services" class="text-blue-600 hover:text-blue-800 font-medium">Learn More About Our Services</a>
+        <div class="flex items-center gap-4">
+          <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md transition duration-200 ease-in-out">Learn More</a>
+          <a href="#" class="text-indigo-600 hover:text-indigo-700 font-semibold">Our Services</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 text-center" data-animate="fade-in">
+      <h3 class="text-2xl font-semibold text-gray-900 mb-4">Our Core Values</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <i class="fas fa-check-circle text-3xl text-green-500 mb-4"></i>
+          <h4 class="text-xl font-semibold text-gray-900 mb-2">Integrity</h4>
+          <p class="text-gray-700">We uphold the highest ethical standards in all our interactions.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <i class="fas fa-users text-3xl text-blue-500 mb-4"></i>
+          <h4 class="text-xl font-semibold text-gray-900 mb-2">Collaboration</h4>
+          <p class="text-gray-700">We work closely with our clients to achieve shared success.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <i class="fas fa-lightbulb text-3xl text-yellow-500 mb-4"></i>
+          <h4 class="text-xl font-semibold text-gray-900 mb-2">Innovation</h4>
+          <p class="text-gray-700">We continuously seek innovative solutions to improve efficiency.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- END SECTION: ABOUT -->
 
-<!-- SERVICES SECTION -->
-<section id="services" class="py-16 bg-gray-50">
+<!-- START SECTION: SERVICES -->
+<section id="services" class="py-12 bg-gray-50">
   <div class="container mx-auto px-4">
     <div class="text-center mb-12">
-      <h2 class="text-3xl font-semibold text-blue-800 mb-4" data-animate="fade-in-up">Our Cleaning Services</h2>
-      <p class="text-gray-600" data-animate="fade-in-up" data-animate-delay="200">We offer a comprehensive range of cleaning services tailored to meet your specific needs. From regular house cleaning to deep cleaning and specialized services, we've got you covered.</p>
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-animate="fade-in">Our Expert Administrative Services</h2>
+      <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl" data-animate="fade-in" data-animate-delay="200">
+        Streamlining your operations and freeing up your time to focus on what matters most.
+      </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Service 1 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="fade-in-up" data-animate-delay="400">
-        <img src="/images/ga22cf8d9fac0616318496cb579492d014022dbb92ccdb85c1fb6d438199099eb6aa170a10a452ff02a9c81400dedbcf3_640.jpg" alt="Residential Cleaning" class="w-full h-48 object-cover">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom">
+        <img src="/api/placeholder/600/400" alt="Virtual Assistant Services" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-blue-700 mb-2">Residential Cleaning</h3>
-          <p class="text-gray-600 mb-4">Keep your home sparkling clean with our residential cleaning services. We offer weekly, bi-weekly, and monthly cleaning options to fit your schedule and budget.</p>
-          <ul class="list-disc list-inside text-gray-600 mb-4">
-            <li>Dusting and polishing</li>
-            <li>Vacuuming and mopping</li>
-            <li>Bathroom cleaning</li>
-            <li>Kitchen cleaning</li>
-          </ul>
-          <a href="#" class="inline-block bg-orange-500 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Virtual Assistant Services</h3>
+          <p class="text-gray-600">
+            Comprehensive virtual assistant support, including calendar management, email correspondence, travel arrangements, and data entry.
+          </p>
+          <a href="#" class="mt-4 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md transition duration-200">Learn More</a>
         </div>
       </div>
 
-      <!-- Service 2 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="fade-in-up" data-animate-delay="600">
-        <img src="/images/g8ad1faace8ff1f8ffcd366ba029205e76a31c46f7b907e703d4c22c26f89e14e3c17dccb9ef0bec8e2417b806cab091c814ac1a2f85ac3118fcaf2fc6f643108_640.jpg" alt="Commercial Cleaning" class="w-full h-48 object-cover">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="100">
+        <img src="/api/placeholder/600/400" alt="Bookkeeping and Accounting" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-blue-700 mb-2">Commercial Cleaning</h3>
-          <p class="text-gray-600 mb-4">Maintain a clean and professional workspace with our commercial cleaning services. We cater to offices, retail spaces, and other commercial properties.</p>
-          <ul class="list-disc list-inside text-gray-600 mb-4">
-            <li>Office cleaning</li>
-            <li>Restroom sanitization</li>
-            <li>Floor maintenance</li>
-            <li>Trash removal</li>
-          </ul>
-          <a href="#" class="inline-block bg-orange-500 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Bookkeeping and Accounting</h3>
+          <p class="text-gray-600">
+            Accurate and reliable bookkeeping services, including financial statement preparation, accounts payable/receivable management, and tax preparation assistance.
+          </p>
+          <a href="#" class="mt-4 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md transition duration-200">Learn More</a>
         </div>
       </div>
 
-      <!-- Service 3 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="fade-in-up" data-animate-delay="800">
-        <img src="/images/g3033f6dac34c770b1cd6366d64d09bf7c9441ab4ed61e0c97fee37da517121d3a17dc3e1999cf96fc6edc7e3f312ee68_640-1.jpg" alt="Deep Cleaning" class="w-full h-48 object-cover">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
+        <img src="/api/placeholder/600/400" alt="Project Management Support" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-blue-700 mb-2">Deep Cleaning</h3>
-          <p class="text-gray-600 mb-4">Give your space a thorough cleaning with our deep cleaning service. Perfect for move-in/move-out situations or seasonal cleaning.</p>
-          <ul class="list-disc list-inside text-gray-600 mb-4">
-            <li>Detailed cleaning of all surfaces</li>
-            <li>Appliance cleaning</li>
-            <li>Window washing</li>
-            <li>Carpet cleaning (optional)</li>
-          </ul>
-          <a href="#" class="inline-block bg-orange-500 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Project Management Support</h3>
+          <p class="text-gray-600">
+            Expert project management assistance, including planning, scheduling, resource allocation, and communication management to ensure successful project completion.
+          </p>
+          <a href="#" class="mt-4 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md transition duration-200">Learn More</a>
         </div>
       </div>
 
-      <!-- Service 4 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="fade-in-up" data-animate-delay="400">
-        <img src="/images/gf561b9703b8271ef0bef7ddcf3dd18bbb2e87f1fa2b4b788af3833648a3862466dbf7e599d34cffc63cf15176a796b8d1e20830c0391cbff9024186e675d7252_640.jpg" alt="Move-In/Move-Out Cleaning" class="w-full h-48 object-cover">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom">
+        <img src="/api/placeholder/600/400" alt="HR Administration" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-blue-700 mb-2">Move-In/Move-Out Cleaning</h3>
-          <p class="text-gray-600 mb-4">Make your move easier with our move-in/move-out cleaning services. We'll ensure the space is spotless for the next occupants.</p>
-          <ul class="list-disc list-inside text-gray-600 mb-4">
-            <li>Thorough cleaning of all rooms</li>
-            <li>Appliance deep cleaning</li>
-            <li>Cabinet and drawer cleaning</li>
-            <li>Window and blind cleaning</li>
-          </ul>
-          <a href="#" class="inline-block bg-orange-500 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">HR Administration</h3>
+          <p class="text-gray-600">
+            Comprehensive HR administrative support, including onboarding, benefits administration, policy development, and compliance management.
+          </p>
+          <a href="#" class="mt-4 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md transition duration-200">Learn More</a>
         </div>
       </div>
 
-      <!-- Service 5 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="fade-in-up" data-animate-delay="600">
-        <img src="https://images.unsplash.com/photo-1551836022-ff5385e2069e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNsZWFuaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Specialized Cleaning" class="w-full h-48 object-cover">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="100">
+        <img src="/api/placeholder/600/400" alt="Customer Support Services" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold text-blue-700 mb-2">Specialized Cleaning</h3>
-          <p class="text-gray-600 mb-4">We offer specialized cleaning services for specific needs, such as post-construction cleaning, event cleanup, and more.</p>
-          <ul class="list-disc list-inside text-gray-600 mb-4">
-            <li>Post-construction debris removal</li>
-            <li>Event cleanup services</li>
-            <li>Upholstery cleaning</li>
-            <li>Carpet stain removal</li>
-          </ul>
-          <a href="#" class="inline-block bg-orange-500 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Customer Support Services</h3>
+          <p class="text-gray-600">
+            Dedicated customer support services, including email, phone, and chat support, to ensure exceptional customer satisfaction and retention.
+          </p>
+          <a href="#" class="mt-4 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md transition duration-200">Learn More</a>
+        </div>
+      </div>
+
+       <div class="bg-white rounded-lg shadow-md overflow-hidden" data-animate="slide-in-bottom" data-animate-delay="200">
+        <img src="/api/placeholder/600/400" alt="Data Analysis and Reporting" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Data Analysis and Reporting</h3>
+          <p class="text-gray-600">
+            In-depth data analysis and reporting services to help you make informed business decisions and optimize performance.
+          </p>
+          <a href="#" class="mt-4 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-md transition duration-200">Learn More</a>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+<!-- END SECTION: SERVICES -->
 
-<!-- FEATURES SECTION -->
-<section id="features" class="bg-white py-16">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl lg:text-4xl font-semibold text-blue-900 mb-4" data-animate="fade-in">Why Choose Test Cleaning Services?</h2>
-      <p class="text-gray-600 text-lg" data-animate="fade-in" data-delay="200">Experience the difference with our commitment to quality, reliability, and customer satisfaction.</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Feature 1 -->
-      <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up">
-        <div class="flex items-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-orange-500 mr-3">
-            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM8.547 9.505a.75.75 0 00-.69.956 5.975 5.975 0 00-1.923 3.54.75.75 0 00.67 1.015c.866.15 1.79.225 2.74.225 2.908 0 5.417-.396 5.761-2.223a.75.75 0 00-.692-.956 5.975 5.975 0 001.923-3.54.75.75 0 00-.67-1.015c-.866-.15-1.79-.225-2.74-.225-2.908 0-5.417.396-5.761 2.223z" clip-rule="evenodd" />
-          </svg>
-          <h3 class="text-xl font-semibold text-blue-800">Experienced Professionals</h3>
-        </div>
-        <p class="text-gray-700">Our team consists of highly trained and experienced cleaning professionals dedicated to providing exceptional service. We are fully vetted and insured for your peace of mind.</p>
-      </div>
-
-      <!-- Feature 2 -->
-      <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-delay="100">
-        <div class="flex items-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-orange-500 mr-3">
-            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM9.75 4.5a3 3 0 116 0 3 3 0 01-6 0zM6.31 15.117A6.745 6.745 0 0112 10.5a6.745 6.745 0 016.69 4.617c.599.927.897 1.982.897 3.113v3.75a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75v-3c0-.172-.033-.344-.097-.511a4.495 4.495 0 00-.645-1.704.75.75 0 00-.165-.167 6.717 6.717 0 00-4.656 0 .75.75 0 00-.165.167 4.495 4.495 0 00-.645 1.704c-.064.167-.097.34-.097.511v3a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75v-3.75c0-1.131.298-2.186.897-3.113z" clip-rule="evenodd" />
-          </svg>
-          <h3 class="text-xl font-semibold text-blue-800">Eco-Friendly Cleaning</h3>
-        </div>
-        <p class="text-gray-700">We utilize environmentally friendly cleaning products and methods that are safe for your family, pets, and the planet.  We minimize waste and promote sustainable practices.</p>
-      </div>
-
-      <!-- Feature 3 -->
-      <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-delay="200">
-        <div class="flex items-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-orange-500 mr-3">
-            <path d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v3a3 3 0 003 3h10.5a3 3 0 003-3v-3a3 3 0 00-3-3v-3A5.25 5.25 0 0012 1.5zM6.75 7.5a.75.75 0 01.75-.75h9a.75.75 0 01.75.75v3a.75.75 0 01-.75.75h-9a.75.75 0 01-.75-.75v-3z" />
-            <path d="M1.5 16.5a3 3 0 013-3h15a3 3 0 013 3v3a3 3 0 01-3 3H4.5a3 3 0 01-3-3v-3z" />
-          </svg>
-          <h3 class="text-xl font-semibold text-blue-800">Customized Cleaning Plans</h3>
-        </div>
-        <p class="text-gray-700">We understand that every home and business is unique. We offer customized cleaning plans tailored to your specific needs, budget, and schedule. Get a free quote today!</p>
-      </div>
-
-      <!-- Feature 4 -->
-      <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up">
-        <div class="flex items-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-orange-500 mr-3">
-            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 018.406 15V8.838a1.125 1.125 0 011.812-.976l5.603 3.113z" clip-rule="evenodd" />
-          </svg>
-          <h3 class="text-xl font-semibold text-blue-800">Flexible Scheduling</h3>
-        </div>
-        <p class="text-gray-700">We offer flexible scheduling options to fit your busy lifestyle, including weekly, bi-weekly, monthly, and one-time cleaning services.  We work around your needs.</p>
-      </div>
-
-      <!-- Feature 5 -->
-      <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-delay="100">
-        <div class="flex items-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-orange-500 mr-3">
-            <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 15a7.5 7.5 0 0014.999 0v3a.75.75 0 01-.75.75H4.5a.75.75 0 01-.75-.75v-3z" clip-rule="evenodd" />
-          </svg>
-          <h3 class="text-xl font-semibold text-blue-800">Dedicated Customer Support</h3>
-        </div>
-        <p class="text-gray-700">Our friendly and responsive customer support team is available to answer your questions and address any concerns. We are committed to providing exceptional customer service.</p>
-      </div>
-
-      <!-- Feature 6 -->
-      <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-up" data-delay="200">
-        <div class="flex items-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-orange-500 mr-3">
-            <path d="M12.375 2.25a.75.75 0 00-1.5 0v1.811A9.706 9.706 0 013 11.25a9.75 9.75 0 0118 0A9.706 9.706 0 0112.375 4.061V2.25zm0 5.25a.75.75 0 00-1.5 0v1.81A6.706 6.706 0 016 11.25a6.75 6.75 0 0112 0A6.706 6.706 0 0112.375 9.31V7.5zm0 5.25a.75.75 0 00-1.5 0v1.81A3.706 3.706 0 019 11.25a3.75 3.75 0 016 0v1.81zm2.625 4.5a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v-1.5h6.75v1.5z" />
-          </svg>
-          <h3 class="text-xl font-semibold text-blue-800">Satisfaction Guarantee</h3>
-        </div>
-        <p class="text-gray-700">We are confident in the quality of our services. If you are not completely satisfied, we will re-clean the area at no additional cost. Your satisfaction is our top priority.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS SECTION -->
-<section class="py-16 bg-gray-50" data-animate="fade-in">
+<!-- START SECTION: FEATURES -->
+<section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-semibold text-center text-blue-700 mb-8">What Our Clients Say</h2>
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4" data-animate="fade-in">Unlock Efficiency with test: Your Administrative Partner</h2>
+            <p class="text-gray-600 text-lg" data-animate="fade-in" data-animate-delay="200">Streamline your operations and focus on growth with our comprehensive administrative solutions.</p>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Testimonial 1 -->
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
-                <div>
-                    <p class="text-gray-700 italic mb-4">"Test Cleaning has been a lifesaver! Their team is professional, thorough, and always on time. I highly recommend them for anyone looking for a reliable cleaning service."</p>
+            <!-- Feature 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-left">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-file-invoice fa-2x text-blue-500 mr-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800">Effortless Invoice Management</h3>
                 </div>
-                <div class="flex items-center mt-4">
-                    <img src="/api/placeholder/50/50" alt="Jane Doe" class="rounded-full w-10 h-10 mr-4">
-                    <div>
-                        <p class="font-semibold text-blue-600">Jane Doe</p>
-                        <p class="text-gray-500 text-sm">Homeowner</p>
-                    </div>
-                </div>
+                <p class="text-gray-700">Say goodbye to manual invoicing. test automates the entire process, from creation to payment reminders, saving you valuable time and reducing errors.</p>
             </div>
 
-            <!-- Testimonial 2 -->
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
-                <div>
-                    <p class="text-gray-700 italic mb-4">"We've been using Test Cleaning for our office for over a year now, and we couldn't be happier. They keep our workspace clean and tidy, which helps boost morale and productivity."</p>
+            <!-- Feature 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="fade-in" data-animate-delay="200">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-calendar-alt fa-2x text-green-500 mr-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800">Seamless Scheduling & Coordination</h3>
                 </div>
-                <div class="flex items-center mt-4">
-                    <img src="/api/placeholder/50/50" alt="John Smith" class="rounded-full w-10 h-10 mr-4">
-                    <div>
-                        <p class="font-semibold text-blue-600">John Smith</p>
-                        <p class="text-gray-500 text-sm">Office Manager</p>
-                    </div>
-                </div>
+                <p class="text-gray-700">Manage appointments, meetings, and events with ease. Our intuitive scheduling tools ensure everyone stays informed and on track, minimizing conflicts and maximizing productivity.</p>
             </div>
 
-            <!-- Testimonial 3 -->
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
-                <div>
-                    <p class="text-gray-700 italic mb-4">"I was so impressed with the deep cleaning service provided by Test Cleaning. They paid attention to every detail and left my house sparkling clean. I will definitely be using them again!"</p>
+            <!-- Feature 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300" data-animate="slide-in-right">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-chart-line fa-2x text-purple-500 mr-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800">Data-Driven Insights & Reporting</h3>
                 </div>
-                <div class="flex items-center mt-4">
-                    <img src="/api/placeholder/50/50" alt="Emily Johnson" class="rounded-full w-10 h-10 mr-4">
-                    <div>
-                        <p class="font-semibold text-blue-600">Emily Johnson</p>
-                        <p class="text-gray-500 text-sm">Apartment Resident</p>
-                    </div>
-                </div>
+                <p class="text-gray-700">Gain valuable insights into your business performance with comprehensive reports and analytics. Track key metrics, identify trends, and make informed decisions to drive growth.</p>
             </div>
 
-            <!-- Testimonial 4 -->
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
-                <div>
-                    <p class="text-gray-700 italic mb-4">"Test Cleaning is the best!  Their move-out cleaning service saved me so much time and stress.  They were very thorough and professional, and I got my full deposit back!"</p>
+             <!-- Feature 4 -->
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 md:col-span-2 lg:col-span-1" data-animate="fade-in" data-animate-delay="400">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-headset fa-2x text-yellow-500 mr-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-800">Dedicated Support & Guidance</h3>
                 </div>
-                <div class="flex items-center mt-4">
-                    <img src="/api/placeholder/50/50" alt="David Lee" class="rounded-full w-10 h-10 mr-4">
-                    <div>
-                        <p class="font-semibold text-blue-600">David Lee</p>
-                        <p class="text-gray-500 text-sm">Tenant</p>
-                    </div>
-                </div>
+                <p class="text-gray-700">Our expert team is here to support you every step of the way. From onboarding to ongoing assistance, we provide personalized guidance to ensure you get the most out of test.</p>
             </div>
 
-            <!-- Testimonial 5 -->
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
-                <div>
-                    <p class="text-gray-700 italic mb-4">"I hired Test Cleaning for a post-construction cleanup, and they did an amazing job. The team was efficient and removed all the dust and debris, leaving my home spotless."</p>
-                </div>
-                <div class="flex items-center mt-4">
-                    <img src="/api/placeholder/50/50" alt="Sarah Williams" class="rounded-full w-10 h-10 mr-4">
-                    <div>
-                        <p class="font-semibold text-blue-600">Sarah Williams</p>
-                        <p class="text-gray-500 text-sm">Homeowner</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial 6 -->
-            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
-                <div>
-                    <p class="text-gray-700 italic mb-4">"Exceptional service! Test Cleaning consistently delivers high-quality cleaning for my Airbnb property.  My guests always comment on how clean and welcoming the space is."</p>
-                </div>
-                <div class="flex items-center mt-4">
-                    <img src="/api/placeholder/50/50" alt="Michael Brown" class="rounded-full w-10 h-10 mr-4">
-                    <div>
-                        <p class="font-semibold text-blue-600">Michael Brown</p>
-                        <p class="text-gray-500 text-sm">Airbnb Host</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
+<!-- END SECTION: FEATURES -->
 
-<!-- CONTACT SECTION -->
-<section id="contact" class="bg-gray-50 py-16 relative overflow-hidden">
-    <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl lg:text-4xl font-extrabold text-blue-900 mb-4" data-animate="fade-in">
-                Get a Free Cleaning Quote
-            </h2>
-            <p class="text-gray-600 text-lg" data-animate="fade-in" data-animate-delay="200">
-                Ready to experience the difference of a professionally cleaned space? Contact us today for a free, no-obligation quote.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div class="bg-white rounded-xl shadow-md p-8" data-animate="slide-in-left">
-                <h3 class="text-xl font-semibold text-blue-700 mb-4">Contact Information</h3>
-                <div class="space-y-4">
-                    <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        <span>(555) 123-4567</span>
-                    </div>
-                    <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.224 0l7.89-5.26M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        <span>info@testcleaning.com</span>
-                    </div>
-                    <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.75 14.25a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                        <span>123 Cleaning Lane, Anytown, USA</span>
-                    </div>
-                </div>
-                <div class="mt-6">
-                    <h3 class="text-xl font-semibold text-blue-700 mb-4">Business Hours</h3>
-                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                    <p>Saturday: 9:00 AM - 1:00 PM</p>
-                    <p>Sunday: Closed</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-md p-8" data-animate="slide-in-right">
-                <h3 class="text-xl font-semibold text-blue-700 mb-4">Request a Quote</h3>
-                <form action="#" method="POST">
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
-                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
-                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone:</label>
-                        <input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="(555) 555-5555">
-                    </div>
-                    <div class="mb-4">
-                        <label for="service" class="block text-gray-700 text-sm font-bold mb-2">Type of Cleaning:</label>
-                        <select id="service" name="service" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                            <option value="residential">Residential Cleaning</option>
-                            <option value="commercial">Commercial Cleaning</option>
-                            <option value="deep">Deep Cleaning</option>
-                            <option value="moveinout">Move-In/Move-Out Cleaning</option>
-                        </select>
-                    </div>
-                    <div class="mb-6">
-                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
-                        <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
-                    </div>
-                    <button type="submit" class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                        Get a Quote
-                    </button>
-                </form>
-            </div>
-        </div>
+<!-- START SECTION: TESTIMONIALS -->
+<section class="py-12 bg-gray-50" data-animate="fade-in">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">What Our Clients Say</h2>
+      <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5">
+        We're proud to help businesses like yours thrive. Here's what some of our clients have to say about their experience with Test.
+      </p>
     </div>
-    <div class="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-blue-100 to-transparent"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-left">
+        <div class="flex items-center mb-4">
+          <img src="/api/placeholder/60/60" alt="Client Avatar" class="rounded-full w-12 h-12 mr-4">
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800">Sarah Johnson</h3>
+            <p class="text-sm text-gray-500">Owner, Johnson Enterprises</p>
+          </div>
+        </div>
+        <p class="text-gray-700">
+          "Test has been instrumental in streamlining our administrative processes. Their efficient solutions have saved us valuable time and resources, allowing us to focus on growing our business. Highly recommended!"
+        </p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-up">
+        <div class="flex items-center mb-4">
+          <img src="/api/placeholder/60/60" alt="Client Avatar" class="rounded-full w-12 h-12 mr-4">
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800">Michael Davis</h3>
+            <p class="text-sm text-gray-500">CEO, Davis & Co.</p>
+          </div>
+        </div>
+        <p class="text-gray-700">
+          "The team at Test is incredibly responsive and professional. Their expertise in administrative support is unmatched. They've helped us navigate complex regulations and ensure compliance with ease."
+        </p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white rounded-lg shadow-md p-6" data-animate="slide-in-right">
+        <div class="flex items-center mb-4">
+          <img src="/api/placeholder/60/60" alt="Client Avatar" class="rounded-full w-12 h-12 mr-4">
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800">Emily Carter</h3>
+            <p class="text-sm text-gray-500">Operations Manager, Carter Solutions</p>
+          </div>
+        </div>
+        <p class="text-gray-700">
+          "We were struggling to manage our paperwork and data entry. Test provided a customized solution that perfectly fit our needs. Their attention to detail and commitment to excellence are truly impressive."
+        </p>
+      </div>
+
+    </div>
+  </div>
 </section>
+<!-- END SECTION: TESTIMONIALS -->
 
-<!-- FOOTER SECTION -->
-<footer class="bg-gray-800 text-white py-12 mt-24">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-        <!-- Company Info -->
-        <div class="space-y-4">
-            <h3 class="text-lg font-semibold">Test Cleaning</h3>
-            <p class="text-gray-300">We provide professional cleaning services for homes and businesses. Our experienced team delivers exceptional results, leaving your space spotless and refreshed.</p>
-            <div class="flex space-x-4">
-                <a href="#" class="hover:text-orange-500"><i class="fab fa-facebook-square fa-2x"></i></a>
-                <a href="#" class="hover:text-orange-500"><i class="fab fa-twitter-square fa-2x"></i></a>
-                <a href="#" class="hover:text-orange-500"><i class="fab fa-instagram-square fa-2x"></i></a>
-            </div>
-        </div>
-
-        <!-- Services -->
-        <div class="space-y-4">
-            <h3 class="text-lg font-semibold">Our Services</h3>
-            <ul class="list-none space-y-2">
-                <li><a href="#" class="text-gray-300 hover:text-orange-500">Residential Cleaning</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-orange-500">Commercial Cleaning</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-orange-500">Deep Cleaning</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-orange-500">Move-In/Move-Out Cleaning</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-orange-500">Carpet Cleaning</a></li>
-            </ul>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="space-y-4">
-            <h3 class="text-lg font-semibold">Quick Links</h3>
-            <ul class="list-none space-y-2">
-                <li><a href="#" class="text-gray-300 hover:text-orange-500">About Us</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-orange-500">Services</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-orange-500">Pricing</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-orange-500">Contact Us</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-orange-500">FAQ</a></li>
-            </ul>
-        </div>
-
-        <!-- Contact Information -->
-        <div class="space-y-4">
-            <h3 class="text-lg font-semibold">Contact Us</h3>
-            <p class="text-gray-300">123 Cleaning Street, Anytown, USA</p>
-            <p class="text-gray-300">Email: info@testcleaning.com</p>
-            <p class="text-gray-300">Phone: (555) 123-4567</p>
-            <div class="mt-4">
-                <h4 class="text-md font-semibold">Business Hours</h4>
-                <p class="text-gray-300">Mon-Fri: 8:00 AM - 6:00 PM</p>
-                <p class="text-gray-300">Saturday: 9:00 AM - 1:00 PM</p>
-                <p class="text-gray-300">Sunday: Closed</p>
-            </div>
-        </div>
-
+<!-- START SECTION: CONTACT -->
+<section id="contact" class="bg-gray-100 py-16" data-animate="fade-in">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+      <p class="text-gray-600">We'd love to hear from you. Get in touch with our team for any inquiries or assistance.</p>
     </div>
 
-    <!-- Copyright -->
-    <div class="text-center mt-8 border-t border-gray-700 pt-8">
-        <p class="text-gray-400">&copy; 2024 Test Cleaning. All rights reserved.</p>
-    </div>
-</footer>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <form class="bg-white shadow-md rounded-lg p-8" data-animate="slide-in-left">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email">
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+            <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Message"></textarea>
+          </div>
+          <div class="flex items-center justify-between">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
 
-    </main>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded',function(){
-            // Animation system
-            const observer=new IntersectionObserver(entries=>{
-                entries.forEach((entry,i)=>{
-                    if(entry.isIntersecting){
-                        setTimeout(()=>{
-                            entry.target.classList.add('visible');
-                            // Handle staggered children if using that animation style
-                            if(entry.target.getAttribute('data-animate')==='stagger'){
-                                Array.from(entry.target.children).forEach((child,childIndex)=>{
-                                    child.style.setProperty('--child-index',childIndex);
-                                });
-                            }
-                        },i*100);
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },{threshold:0.15,rootMargin:'0px 0px -100px 0px'});
-            
-            document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
-            
-            // Fixed navigation
-            const nav=document.querySelector('nav');
-            if(nav){
-                const handleScroll=()=>{
-                    nav.classList[window.scrollY>100?'add':'remove']('nav-fixed');
-                };
-                window.addEventListener('scroll',handleScroll,{passive:true});
-                handleScroll();
-            }
-            
-            // Smooth scroll
-            document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-                anchor.addEventListener('click',function(e){
-                    e.preventDefault();
-                    const targetId=this.getAttribute('href');
-                    if(targetId==='#')return;
-                    const target=document.querySelector(targetId);
-                    if(target){
-                        const targetPosition=target.getBoundingClientRect().top+window.pageYOffset-(nav?nav.offsetHeight:0)-20;
-                        window.scrollTo({top:targetPosition,behavior:'smooth'});
-                    }
-                });
-            });
-            
-            // Scroll progress indicator
-            const height=Math.max(
-                document.body.scrollHeight,
-                document.body.offsetHeight,
-                document.documentElement.clientHeight,
-                document.documentElement.scrollHeight,
-                document.documentElement.offsetHeight
-            )-window.innerHeight;
-            
-            window.addEventListener('scroll',()=>{
-                document.documentElement.style.setProperty('--scroll-progress',(window.scrollY/height*100)+'%');
-            },{passive:true});
-            
-            // Mobile menu
-            const menuToggle=document.getElementById('mobile-menu-toggle');
-            const mobileMenu=document.getElementById('mobile-menu');
-            if(menuToggle&&mobileMenu){
-                menuToggle.addEventListener('click',()=>{
-                    mobileMenu.classList.toggle('hidden');
-                    document.body.classList.toggle('overflow-hidden');
-                });
-                document.addEventListener('click',e=>{
-                    if(mobileMenu&&!mobileMenu.classList.contains('hidden')&&
-                        menuToggle&&!menuToggle.contains(e.target)&&!mobileMenu.contains(e.target)){
-                        mobileMenu.classList.add('hidden');
-                        document.body.classList.remove('overflow-hidden');
-                    }
-                });
-            }
-            
-            // Accordions
-            document.querySelectorAll('[data-accordion-target]').forEach(btn=>{
-                btn.addEventListener('click',()=>{
-                    const target=document.querySelector(btn.getAttribute('data-accordion-target'));
-                    if(target){
-                        const isExpanded=btn.getAttribute('aria-expanded')==='true';
-                        target.classList.toggle('hidden');
-                        btn.setAttribute('aria-expanded',isExpanded?'false':'true');
-                        const icon=btn.querySelector('.accordion-icon');
-                        if(icon)icon.classList.toggle('rotate-180');
-                    }
-                });
-            });
-            
-            // Form validation (optional enhancement)
-            document.querySelectorAll('form').forEach(form=>{
-                form.addEventListener('submit',function(e){
-                    let valid=true;
-                    const requiredFields=form.querySelectorAll('[required]');
-                    
-                    requiredFields.forEach(field=>{
-                        if(!field.value.trim()){
-                            valid=false;
-                            field.classList.add('border-red-500');
-                            
-                            // Add error message if not already present
-                            let errorMsg=field.parentNode.querySelector('.error-message');
-                            if(!errorMsg){
-                                errorMsg=document.createElement('p');
-                                errorMsg.className='text-red-500 text-sm mt-1 error-message';
-                                errorMsg.textContent='This field is required';
-                                field.parentNode.appendChild(errorMsg);
-                            }
-                        }else{
-                            field.classList.remove('border-red-500');
-                            const errorMsg=field.parentNode.querySelector('.error-message');
-                            if(errorMsg)errorMsg.remove();
-                        }
-                    });
-                    
-                    if(!valid){
-                        e.preventDefault();
-                    }
-                });
-            });
-            
-            // Tabs functionality if present
-            document.querySelectorAll('[data-tabs]').forEach(tabGroup=>{
-                const tabs=tabGroup.querySelectorAll('[data-tab]');
-                const tabContents=document.querySelectorAll('[data-tab-content]');
-                
-                tabs.forEach(tab=>{
-                    tab.addEventListener('click',()=>{
-                        const target=tab.getAttribute('data-tab');
-                        
-                        // Update active tab state
-                        tabs.forEach(t=>t.classList.remove('active-tab','text-primary-600','border-primary-600'));
-                        tab.classList.add('active-tab','text-primary-600','border-primary-600');
-                        
-                        // Show correct content
-                        tabContents.forEach(content=>{
-                            if(content.getAttribute('data-tab-content')===target){
-                                content.classList.remove('hidden');
-                            }else{
-                                content.classList.add('hidden');
-                            }
-                        });
-                    });
-                });
-            });
-            
-            // Carousels
-            document.querySelectorAll('[data-carousel]').forEach(carousel=>{
-                const slides=carousel.querySelectorAll('[data-slide]');
-                const prevBtn=carousel.querySelector('[data-carousel-prev]');
-                const nextBtn=carousel.querySelector('[data-carousel-next]');
-                
-                if(slides.length>0&&prevBtn&&nextBtn){
-                    let current=0,interval=null;
-                    
-                    slides[0].classList.remove('hidden');
-                    
-                    const updateIndicators=()=>{
-                        carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
-                            ind.classList[i===current?'add':'remove']('bg-primary-600');
-                            ind.classList[i!==current?'add':'remove']('bg-gray-300');
-                        });
-                    };
-                    
-                    const showSlide=idx=>{
-                        slides.forEach(s=>s.classList.add('hidden'));
-                        slides[idx].classList.remove('hidden');
-                        updateIndicators();
-                    };
-                    
-                    nextBtn.addEventListener('click',()=>{
-                        current=(current+1)%slides.length;
-                        showSlide(current);
-                    });
-                    
-                    prevBtn.addEventListener('click',()=>{
-                        current=(current-1+slides.length)%slides.length;
-                        showSlide(current);
-                    });
-                    
-                    updateIndicators();
-                    
-                    const startAuto=()=>{
-                        if(carousel.hasAttribute('data-auto')&&!interval){
-                            interval=setInterval(()=>{
-                                current=(current+1)%slides.length;
-                                showSlide(current);
-                            },5000);
-                        }
-                    };
-                    
-                    carousel.addEventListener('mouseenter',()=>{
-                        if(interval){clearInterval(interval);interval=null;}
-                    });
-                    
-                    carousel.addEventListener('mouseleave',startAuto);
-                    
-                    carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
-                        ind.addEventListener('click',()=>{
-                            current=i;
-                            showSlide(current);
-                        });
-                    });
-                    
-                    startAuto();
-                }
-            });
-            
-            // Initialize counters for stats sections if they exist
-            document.querySelectorAll('[data-counter]').forEach(counter=>{
-                const target=parseInt(counter.getAttribute('data-counter')||'0',10);
-                const duration=1500; // Animation duration in ms
-                const step=Math.ceil(target/50); // How much to increment per step
-                let current=0;
-                
-                const updateCounter=()=>{
-                    current+=step;
-                    if(current>target)current=target;
-                    
-                    counter.textContent=current.toString().replace(/B(?=(d{3})+(?!d))/g,',');
-                    
-                    if(current<target){
-                        requestAnimationFrame(updateCounter);
-                    }
-                };
-                
-                // Start counting when element is in view
-                const observer=new IntersectionObserver(entries=>{
-                    entries.forEach(entry=>{
-                        if(entry.isIntersecting){
-                            updateCounter();
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                },{threshold:0.5});
-                
-                observer.observe(counter);
-            });
-        });
-    </script>
+      <div class="grid grid-cols-1 gap-4" data-animate="slide-in-right">
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Office</h3>
+          <p class="text-gray-600">123 Business Park Avenue</p>
+          <p class="text-gray-600">Suite 400</p>
+          <p class="text-gray-600">Cityville, State 54321</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Contact Information</h3>
+          <p class="text-gray-600">Phone: <a href="tel:+15551234567" class="text-blue-500 hover:underline">+1 (555) 123-4567</a></p>
+          <p class="text-gray-600">Email: <a href="mailto:info@test.com" class="text-blue-500 hover:underline">info@test.com</a></p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="/api/placeholder/400/300" alt="Map of Test Office Location" class="w-full h-auto">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END SECTION: CONTACT -->
+
+<!-- START SECTION: FOOTER -->
+<!-- Error generating footer section: API request failed with status 429 -->
+<!-- END SECTION: FOOTER -->
+
+  <!-- AI is expected to include necessary JS for interactivity within its generated sections -->
 </body>
 </html>
